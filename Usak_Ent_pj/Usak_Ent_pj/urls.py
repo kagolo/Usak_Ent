@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path
 admin.site.site_header="Usak Ent project"
 admin.site.index_title="Usak Enterprises"
-admin.site.site_title="Usak Enterprises Limited"
+admin.site.site_title="Usak Enterprises Ltd"
 
 urlpatterns = [
     path('admin/', admin.site.urls),
