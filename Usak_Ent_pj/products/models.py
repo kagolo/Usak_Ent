@@ -10,8 +10,15 @@ class bags(models.Model):
     country=CountryField(multiple=False)
     item_image=models.ImageField()
 
-class order(models.Model):
-    pass   
+# class order(models.Model):
+#     pass  
+
+class Register_users(models.Model):
+    User_name=models.CharField(max_length=200,null=False)
+    Email=models.EmailField()
+    password=models.CharField(max_length=100)
+
+
     
     
 
