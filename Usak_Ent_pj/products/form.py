@@ -10,9 +10,9 @@ class Register_userForm(forms.ModelForm):
 
 
     class Meta:
-        Model = Register_users
-        fields = ['User_name','Email','password']
-    # def __init__(self, *args, **kwargs):
-    #     super(Register_userForm, self).__init__(*args, **kwargs)
-    #     self.helper = FormHelper()        
+        model = Register_users
+        fields = '__all__'
+    def __init__(self, *args, **kwargs):
+        super(Register_userForm, self).__init__(*args, **kwargs)
+        self.helper = FormHelper()        
     
